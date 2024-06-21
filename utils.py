@@ -7,6 +7,7 @@ from nltk.tokenize import word_tokenize
 # Download NLTK data
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 # Load the model
 def load_model():
