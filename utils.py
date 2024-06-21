@@ -1,8 +1,12 @@
 import pickle as pkl
 import string
+import nltk
 from nltk.stem import PorterStemmer ,WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+# Download NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
 
 # Load the model
 def load_model():
