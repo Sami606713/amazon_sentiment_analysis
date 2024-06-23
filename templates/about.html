@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-cover-custom {
+            background-image: url('https://source.unsplash.com/random/1920x1080?tech');
+            background-size: cover;
+            background-position: center;
+        }
+        .bg-overlay {
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-cover-custom text-gray-100">
+
+<nav class="bg-blue-600 p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex space-x-4">
+            <a href="/" class="text-white text-xl font-extrabold">Sentiment Analysis</a>
+            <a href="/" class="text-white hover:text-gray-200 px-3 py-2">Home</a>
+            <a href="/about" class="text-white hover:text-gray-200 px-3 py-2">About</a>
+        </div>
+        <div class="flex items-center">
+            <img src="my_img.jpg"  alt="Profile" class="rounded-full w-10 h-10 border-2 border-white">
+        </div>
+    </div>
+</nav>
+
+<div class="bg-overlay p-10">
+    <div class="container mx-auto mt-10">
+        <h1 class="text-4xl font-bold mb-6 text-center text-blue-400">About This Project</h1>
+        <p class="text-xl mb-8 text-center">
+            In this project, I have created a sentiment analysis model using Amazon review data. Below are the steps taken to build this project:
+        </p>
+        <ol class="list-decimal list-inside text-lg space-y-4">
+            <li class="mb-2">First of all, I performed EDA on Amazon reviews.</li>
+            <li class="mb-2">Second, I performed text preprocessing, including removing URLs, punctuation, stopwords, stemming, lemmatization, etc.</li>
+            <li class="mb-2">Third, I converted the text into vectors using TF-IDF.</li>
+            <li class="mb-2">Fourth, I trained different models.</li>
+            <li class="mb-2">After training different models, I selected the best model and tuned it. After tuning, I saved the model using pickle so that it can be used in the web app.</li>
+            <li class="mb-2">After saving the model, I created a Flask app and used the model for sentiment analysis.</li>
+        </ol>
+    </div>
+</div>
+
+</body>
+</html>
