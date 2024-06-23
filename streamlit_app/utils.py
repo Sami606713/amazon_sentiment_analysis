@@ -11,7 +11,7 @@ nltk.download('wordnet')
 
 # Load the model
 def load_model():
-    with open("models/Sentiment.pkl" ,"rb") as f:
+    with open("streamlit_app/models/Sentiment.pkl" ,"rb") as f:
         model=pkl.load(f)
     return model
 
